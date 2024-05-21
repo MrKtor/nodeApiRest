@@ -1,37 +1,37 @@
-const mongoose = require("mongoose");
-// const User = require("./models/user");
-const { Color, Palette } = require("./models/color");
-mongoose.connect("mongodb://127.0.0.1:27017/matchminicolor");
+// const mongoose = require("mongoose");
+// // const User = require("./models/user");
+// const { Color, Palette } = require("./models/color");
+// mongoose.connect("mongodb://127.0.0.1:27017/matchminicolor");
 
-let palettes = [
-    new Palette({
-        name: "Prueba carga datos",
-        idUser: "660959c02ec8cca57874a26a",
-        colors: [
-            {
-                _id: "661585b2f177980d58c7ce47",
-                company: "Vallejo",
-                gama: "Game Color",
-                name: "Amarillo Dorado",
-                red: 214,
-                green: 116,
-                blue: 25,
-                code: "72007",
-                feature: "Acrílica",
-            },
-            {
-                _id: "661585b2f177980d58c7ce46",
-                company: "Vallejo",
-                gama: "Model Color",
-                name: "Amarillo Lunar",
-                red: 238,
-                green: 184,
-                blue: 0,
-                code: "70858",
-                feature: "Acrílica",
-            }]
-    }),
-];
+// let palettes = [
+//     new Palette({
+//         name: "Prueba carga datos",
+//         idUser: "660959c02ec8cca57874a26a",
+//         colors: [
+//             {
+//                 _id: "661585b2f177980d58c7ce47",
+//                 company: "Vallejo",
+//                 gama: "Game Color",
+//                 name: "Amarillo Dorado",
+//                 red: 214,
+//                 green: 116,
+//                 blue: 25,
+//                 code: "72007",
+//                 feature: "Acrílica",
+//             },
+//             {
+//                 _id: "661585b2f177980d58c7ce46",
+//                 company: "Vallejo",
+//                 gama: "Model Color",
+//                 name: "Amarillo Lunar",
+//                 red: 238,
+//                 green: 184,
+//                 blue: 0,
+//                 code: "70858",
+//                 feature: "Acrílica",
+//             }]
+//     }),
+// ];
 
 // let colors = [
         // new Color({
@@ -503,6 +503,6 @@ let palettes = [
 //     })
 // ];
 
-palettes.forEach( p=> p.save());
+// palettes.forEach( p=> p.save());
 // colors.forEach( c=> c.save());
 // users.forEach( u=> u.save());
