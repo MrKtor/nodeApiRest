@@ -29,6 +29,9 @@ function calcularNivelSemejanza(colorBase, colores) {
     return colores;
 }
 
+router.get("/random", async (req, res) => {
+    res.status(200).send("ok");
+})
 
 router.get("/", async (req, res) => {
     try {
